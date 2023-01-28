@@ -1,4 +1,4 @@
-package BasicConcepts;
+package JavaNotes.BasicConcepts;
 
 import java.util.Scanner;
 

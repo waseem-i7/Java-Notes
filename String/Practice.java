@@ -1,4 +1,4 @@
-package String;
+package JavaNotes.String;
 
 import java.util.jar.Attributes.Name;
 

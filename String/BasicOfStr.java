@@ -1,4 +1,4 @@
-package String;
+package JavaNotes.String;
 
 public class BasicOfStr {
     public static void main(String[] args) {

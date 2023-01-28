@@ -1,4 +1,4 @@
-package ConditionalStatements;
+package JavaNotes.ConditionalStatements;
 
 import java.text.DateFormatSymbols;
 import java.util.Scanner;

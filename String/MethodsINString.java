@@ -1,6 +1,4 @@
-package String;
-
-import org.w3c.dom.NameList;
+package JavaNotes.String;
 
 public class MethodsINString {
     public static void main(String[] args) {
