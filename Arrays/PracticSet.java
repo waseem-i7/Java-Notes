@@ -103,17 +103,18 @@ public class PracticSet {
 
 
        // Question 8
-        int[] arr = {10,20,30,40,50};
+        int[] arr = {10,60,30,40,50};
         boolean isArraySorted = true;
         for (int i = 0 ; i<arr.length-1 ; i++) {
-            if (arr[i]>arr[i+1]){
+            if (arr[i] > arr[i + 1]) {
                 isArraySorted = false;
-                System.out.println("Not Sorted");
-                return;
+                break;
             }
         }
         if (isArraySorted){
             System.out.println("Sorted");
+        }else {
+            System.out.println("Not Sorted");
         }
 
     }
