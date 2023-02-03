@@ -73,7 +73,7 @@ public class Practice {
         System.out.println("Enter a Url");
         String url = sc.nextLine();
         if(url.endsWith(".com")){
-            System.out.println("Commertial website");
+            System.out.println("Commercial website");
         }else if(url.endsWith(".org")){
             System.out.println("Organisation website");
         }else if(url.endsWith(".in")){
