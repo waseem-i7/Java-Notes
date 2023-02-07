@@ -13,8 +13,6 @@ class Employee{  //Defining a custom class
     void getSalary(){
         System.out.println(salary);
     }
-
-
 }
 
 public class Basics {
