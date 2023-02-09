@@ -1,4 +1,4 @@
-package JavaNotes.Oops;
+package JavaNotes.Oops.BasicConcepts;
 
 class Employee{  //Defining a custom class
     int id;

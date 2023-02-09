@@ -1,4 +1,4 @@
-package JavaNotes.Oops;
+package JavaNotes.Oops.BasicConcepts;
 
 class  MyEmployee1{
     private int salary;
@@ -26,8 +26,6 @@ public class Constructor {
     public static void main(String[] args) {
 
 //        MyEmployee1 e1 = new MyEmployee1();
-//        e1.setName("waseem");
-//        e1.setSalary(12000);
 //        System.out.println(e1.getName());
 //        System.out.println(e1.getSalary());
 

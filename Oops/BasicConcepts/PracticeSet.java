@@ -1,4 +1,4 @@
-package JavaNotes.Oops;
+package JavaNotes.Oops.BasicConcepts;
 
 class  MyEmployee{
     int salary;
@@ -49,6 +49,31 @@ class Square{
     }
 }
 
+class MyRectangle{
+    int length,height;
+
+    public int Area(){
+        return length*height;
+    }
+
+    public int Perimeter(){
+        return 2*(length+height);
+    }
+}
+
+class MyCircle{
+    int radius;
+
+    public MyCircle(int radius){
+        this.radius = radius;
+    }
+
+    public double area(){
+        return  Math.PI*radius*radius;
+    }
+}
+
+
 class Pubg{
 
     void Firing(){
@@ -68,7 +93,7 @@ class Pubg{
 public class PracticeSet {
     public static void main(String[] args) {
 
-        /*
+ /*
         //Question 1
 
          //Instantiating the object of MyEmployee class
@@ -95,7 +120,13 @@ public class PracticeSet {
         System.out.println(square.Area());
         System.out.println(square.Perimeter());
 
-         */
+        //Question 4
+        Rectangle rectangle = new Rectangel();
+        rectangle.length = 3;
+        rectangle.height = 3;
+        System.out.println(square.Area());
+        System.out.println(square.Perimeter());
+
 
         //Question 5
         Pubg pubg = new Pubg();
@@ -103,5 +134,10 @@ public class PracticeSet {
         pubg.Hitting();
         pubg.Running();
 
+        //Question 6
+        MyCircle circle1 = new MyCircle(9);
+        double area = circle1.area();
+        System.out.println(area);
+ */
     }
 }
