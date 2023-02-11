@@ -103,7 +103,6 @@ public class Basic {
         //     System.out.println("a is true hence condition is false");
         // }
 
-        
 
     }
 }

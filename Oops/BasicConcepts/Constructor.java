@@ -9,6 +9,7 @@ class  MyEmployee1{
         this.salary = 50000;
     }
 
+
     public MyEmployee1(String name , int salary){
           this.name = name;
           this.salary = salary;

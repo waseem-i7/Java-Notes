@@ -28,6 +28,7 @@ public class ThisAndSuper {
     public static void main(String[] args) {
          EkClass e = new EkClass(12);
          DoClass d = new DoClass(33);
+         e.getA();
     }
 }
 

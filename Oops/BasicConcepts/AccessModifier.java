@@ -21,8 +21,9 @@ class MyEmployeeClass{
         return name;
     }
 
-
 }
+
+
 public class AccessModifier {
     public static void main(String[] args) {
         MyEmployeeClass employee = new MyEmployeeClass();

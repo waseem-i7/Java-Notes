@@ -59,5 +59,6 @@ public class PracticeSet {
 
         //Question 5
         System.out.println(Thread.currentThread().getState());
+
     }
 }

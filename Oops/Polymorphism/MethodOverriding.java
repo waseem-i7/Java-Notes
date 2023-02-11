@@ -20,16 +20,18 @@ class Derived extends Base{
         System.out.println("I am meth3 of class Derived");
     }
 }
+
 public class MethodOverriding {
     public static void main(String[] args) {
 
-        Base b = new Base();
-        b.meth1();
-        b.meth2();
+//        Base b = new Base();
+//        b.meth1();
+//        b.meth2();
 
         Derived d = new Derived();
         d.meth1();
-        d.meth2(); //method overriding
+        d.meth2();  //method overriding
         d.meth3();
+
     }
 }
