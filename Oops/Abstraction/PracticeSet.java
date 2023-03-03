@@ -32,10 +32,12 @@ abstract class Monkey{
     abstract void jump();
     abstract void bite();
 }
+
 interface BasicAnimal{
     void eat();
     void sleep();
 }
+
 class Human extends Monkey implements  BasicAnimal{
 
     @Override
@@ -63,12 +65,12 @@ class Human extends Monkey implements  BasicAnimal{
     }
 }
 
-
 abstract class TelePhone{
     abstract void ring();
     abstract void lift();
     abstract void disconnect();
 }
+
 class SmartTelephone extends TelePhone{
 
     @Override

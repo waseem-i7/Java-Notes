@@ -55,15 +55,17 @@ class MySmartPhone extends MyCellPhone implements MyWifi, MyCamera{
 
     @Override
     public void connectToNetwork(String network) {
-        System.out.println("Taking snap");
+        System.out.println("Connecting to Network "+network);
     }
 }
 
 public class DefaultMethods {
     public static void main(String[] args) {
         MySmartPhone ms = new MySmartPhone();
-        ms.record4KVideo();
-        //ms.greet(); -->Throws an error!
+        ms.takeSnap();
+        ms.recordVideo();
+        ms.connectToNetwork("Tesla5G");
+       // ms.greet(); -->Throws an error!;
         String[] arr = ms.getNetworks();
         for (String item : arr){
             System.out.println(item);

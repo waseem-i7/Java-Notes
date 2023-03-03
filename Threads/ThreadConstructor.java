@@ -1,6 +1,7 @@
 package JavaNotes.Threads;
 
 class MyThr extends Thread{
+
     public MyThr(String name){
         super(name);
     }

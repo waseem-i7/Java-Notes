@@ -15,6 +15,7 @@ class SmartPhone extends Phone{
         System.out.println("Playing music");
     }
 
+    @Override
     public void on(){
         System.out.println("Turning on SmartPhone...");
     }
@@ -22,7 +23,7 @@ class SmartPhone extends Phone{
 public class DynamicMethodDispatch {
     public static void main(String[] args) {
 
-       /* //Scenario 1
+    /*   //Scenario 1
         Phone phone = new Phone();
         phone.showTime();
         phone.on();
@@ -32,7 +33,7 @@ public class DynamicMethodDispatch {
         smartPhone.showTime();
         smartPhone.on();
         smartPhone.music();
-        */
+
 
         //Scenario 3
         Phone obj = new SmartPhone(); //Allowed
@@ -40,6 +41,10 @@ public class DynamicMethodDispatch {
         //obj.music(); //Not Allowed
 
         //Scenario 4
-        //SmartPhone obj1 = new Phone(); // Not Allowed
+        SmartPhone obj1 = new Phone(); // Not Allowed
+
+
+     */
+
     }
 }

@@ -24,8 +24,13 @@ class Cylinder extends Circle{
     public double volume(){
         return Math.PI*this.radius*this.radius*this.height;
     }
+
+    public double area(){
+        return 2*Math.PI*radius*height*(radius+height);
+    }
 }
 
+//using constructor
 class Rectangle{
     public int length;
     public int breadth;
@@ -54,8 +59,48 @@ class Cuboid extends Rectangle{
     }
 }
 
+//using set method
+class rect{
+    int l;
+    int b;
+
+    public void setL(int l) {
+        this.l = l;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public int area(){
+        return l*b;
+    }
+    public int parameter(){
+        return 2*(l+b);
+    }
+}
+class cubo extends rect{
+    int h;
+
+    public void setH(int h) {
+        this.h = h;
+    }
+
+    public int volume(){
+        return l*b*h;
+    }
+}
+
 public class PracticeSet {
     public static void main(String[] args) {
+
+        cubo c=new cubo();
+        c.setH(2);
+        c.setB(3);
+        c.setL(4);
+        System.out.println(c.area());
+        System.out.println(c.parameter());
+        System.out.println(c.volume());
 
 /*
         //Problem 1
@@ -89,5 +134,5 @@ public class PracticeSet {
 
  */
 
-    }
+   }
 }

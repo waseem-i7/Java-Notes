@@ -5,7 +5,7 @@ public class FinallyBlock {
     public static int greet(){
         try{
             int a = 50;
-            int b= 0;
+            int b= 2;
             int c = a/b;
             return c;
 
@@ -13,9 +13,8 @@ public class FinallyBlock {
             System.out.println(e);
         }
         finally {
-            System.out.println("Cleaning up resources...This is the end of this function");
+            System.out.println("Function End");
         }
-
         return -1;
     }
 
@@ -37,6 +36,7 @@ public class FinallyBlock {
 //                System.out.println("I am finally for value of b = "+b);
 //            }
 //            b--;
+//            System.out.println("");
 //        }
 
         try {

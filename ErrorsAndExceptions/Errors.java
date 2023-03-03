@@ -22,7 +22,7 @@ public class Errors {
         c = 5;      //Error: c not declared!
 */
 
- /*       Logiacal Error;
+ /*     Logical Error;
         Write a program to print all prime numbers between 1 to 10;
         System.out.println(2);
         for (int i =1 ; i<5 ; i++){
@@ -32,7 +32,9 @@ public class Errors {
         //Runtime Error
         int k ;
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Number");
         k= sc.nextInt();
         System.out.println("Integer Part of 1000 divided by k is "+1000/k); //produce a runtime error
+        System.out.println("Program End");
     }
 }

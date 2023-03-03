@@ -28,7 +28,7 @@ public class ThreadPriorities {
         t1.setPriority(Thread.MIN_PRIORITY);
         t2.setPriority(Thread.MIN_PRIORITY);
         t3.setPriority(Thread.MIN_PRIORITY);
-        t4.setPriority(Thread.MIN_PRIORITY);
+        t4.setPriority(Thread.NORM_PRIORITY);
         t5.setPriority(Thread.MAX_PRIORITY);
 
         t1.start();
@@ -36,10 +36,10 @@ public class ThreadPriorities {
         t3.start();
         t4.start();
         t5.start();
-//        System.out.println("The id of the thread t1 is "+t1.getId());
-//        System.out.println("The name of the thread t1 is "+t1.getName());
-//        System.out.println("The id of the thread t2 is "+t2.getId());
-//        System.out.println("The name of the thread t2 is "+t2.getName());
+        System.out.println("The id of the thread t1 is "+t1.getId());
+        System.out.println("The name of the thread t1 is "+t1.getName());
+        System.out.println("The id of the thread t2 is "+t2.getId());
+        System.out.println("The name of the thread t2 is "+t2.getName());
 
     }
 }

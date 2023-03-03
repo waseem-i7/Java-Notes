@@ -1,12 +1,13 @@
 package JavaNotes.CollectionsFramework;
 
-import java.util.ArrayList;
 
-public class BasicsConcept {
+import java.util.LinkedList;
+
+public class LinkedListClass {
     public static void main(String[] args) {
-      //ArrayList
-        ArrayList<Integer> l1 = new ArrayList<>();
-        ArrayList<Integer> l2 = new ArrayList<>(5);
+//ArrayList
+        LinkedList<Integer> l1 = new LinkedList<>();
+        LinkedList<Integer> l2 = new LinkedList<>();
 
         //Add Method
         l1.add(6);
@@ -15,6 +16,8 @@ public class BasicsConcept {
         l1.add(5);
         l1.add(0,3);
         l1.add(0,1);
+        l1.addFirst(944);
+        l1.addLast(393);
         l2.add(62);
         l2.add(41);
         l2.add(72);

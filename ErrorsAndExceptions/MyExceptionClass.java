@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 class MyException extends Exception{
     @Override
-    public String toString() {
-        return "I am toString()";
+    public String getMessage() {
+        return "I am getMessage()";
     }
 
     @Override
-    public String getMessage() {
-        return "I am getMessage()";
+    public String toString() {
+        return "I am toString()";
     }
 }
 
@@ -26,24 +26,48 @@ class MaxAgeException extends Exception{
     }
 }
 
+class RadiusNegativeException extends Exception{
+    @Override
+    public String getMessage() {
+        return "Radius cannot be Negative";
+    }
+}
+
 
 public class MyExceptionClass {
     public static void main(String[] args) {
-        int a ;
+//        int a ;
+//        Scanner sc  = new Scanner(System.in);
+//        a = sc.nextInt();
+//        if (a<9){
+//            try {
+//                throw new MyException();
+//                //throw new ArithmeticException("This is an exception");
+//            } catch (Exception e) {
+//                System.out.println(e.getMessage());
+//                System.out.println(e.toString());
+//                System.out.println(e);
+//                System.out.println("Finished");
+//            }
+//            System.out.println("Yes Finished");
+//        }else {
+//            System.out.println("number is greater than 9");
+//        }
+
+        int age ;
         Scanner sc  = new Scanner(System.in);
-        a = sc.nextInt();
-        if (a<9){
+        System.out.println("Enter your age ");
+        age = sc.nextInt();
+        if (age>125){
             try {
-                throw new MyException();
-                //throw new ArithmeticException("This is an exception");
+                throw new MaxAgeException();
             } catch (Exception e) {
                 System.out.println(e.getMessage());
                 System.out.println(e.toString());
-                System.out.println(e);
-                e.printStackTrace();
-                System.out.println("Finished");
             }
-            System.out.println("Yes Finished");
+
+        }else {
+            System.out.println("Age is Correct");
         }
     }
 }

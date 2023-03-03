@@ -20,11 +20,11 @@ class practiceThread2 extends Thread{
         super.run();
         while (true){
             System.out.println("Welcome");
-//            try {
-//                sleep(200);
-//            } catch (InterruptedException e) {
-//                throw new RuntimeException(e);
-//            }
+            try {
+                sleep(200);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }

@@ -4,13 +4,13 @@ class MyThread1 extends Thread{
     @Override
     public void run() {
         int i = 0 ;
-        super.run();
         while (i<100){
             i++;
             System.out.println("My Thread1 for Cooking ");
             System.out.println("I am Happy! ");
         }
     }
+
 }
 
 class MyThread2 extends Thread{

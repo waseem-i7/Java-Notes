@@ -5,12 +5,15 @@ abstract class Parent{
         System.out.println("I am Constructor of Base Class");
     }
 
-    public void sayHello(){
+    //abstract method
+    abstract public void greet1();
+    abstract public void greet2();
+
+    //non-abstract method
+    public void greet3(){
         System.out.println("Hello");
     }
 
-    abstract public void greet1();
-    abstract public void greet2();
 }
 
 class Child1 extends Parent{
@@ -33,8 +36,13 @@ abstract class Child2 extends Parent{
 
 public class AbstractClass {
     public static void main(String[] args) {
-        //Parent p = new Parent();  -->error
+        //Parent p = new Parent(); // -->error
         Child1 child1 = new Child1();
+        child1.greet1();
+        child1.greet2();
+        child1.greet3();
         //Child2 child2 = new Child2();  -->error
+
+        //Parent p = new Child1();
     }
 }
