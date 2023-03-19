@@ -15,7 +15,7 @@ public class LinkedListClass {
         l1.add(7);
         l1.add(5);
         l1.add(0,3);
-        l1.add(0,1);
+        l1.add(1,13);
         l1.addFirst(944);
         l1.addLast(393);
         l2.add(62);
@@ -30,8 +30,8 @@ public class LinkedListClass {
         l1.set(1,455);
 
         //addAll Method
-        //l1.addAll(l2);
-        //l1.addAll(0,l2);
+        l1.addAll(l2);
+        l1.addAll(0,l2);
 
         //clear method
         //l1.clear();
